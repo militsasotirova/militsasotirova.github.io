@@ -19,6 +19,10 @@ body {
   border: 2px solid #C9E4CA;
 }
 
+.centerpiece p {
+  margin-top: -10px;
+}
+
 p {
   font-size: 130%;
 }
@@ -51,7 +55,7 @@ footer img {
   height: 50%;
   display: inline-block;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 .grid-container {
@@ -59,7 +63,7 @@ footer img {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 3%;
+  padding: 1%;
   grid-gap: 10px;
 }
 

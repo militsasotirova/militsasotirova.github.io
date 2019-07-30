@@ -13,6 +13,7 @@ body {
     font-family: 'Space Mono', monospace;
     color: black;
     background-color: #ECF0F1;
+    line-height: 150%;
 }
 
 header {
@@ -31,7 +32,7 @@ header img {
 
 header h1 {
   float: left;
-  margin-top: 27px;
+  margin-top: 50px;
   font-weight: 300;
 }
 
@@ -85,4 +86,21 @@ footer img {
   font-size: 90%;
   margin: 40px;
   font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin-left: 50px;
+  line-height: 20px;
+  font-size: 120%;
+}
+
+.aboutme-grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+}
+
+.aboutme-grid-item {
+  margin: auto;
 }
