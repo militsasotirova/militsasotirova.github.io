@@ -32,13 +32,48 @@
 		</header>
 
 		<div class="page-content">
-			<p>projects</p>
-			<a href="https://github.com/militsasotirova/militsasotirova.github.io" target="_blank"><p>this website</p></a>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/vwczaF5nrdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<a href="https://youtu.be/vwczaF5nrdU" target="_blank"><p>Video Link</p></a>
-			<a href="../resources/Reading_Level_Analysis.pdf" target="_blank"><p>Paper</p></a>
-			<a href="../resources/Poster.pdf" target="_blank"><p>Poster</p></a>
-			<p>put repo on github</p>
+			<div class="projects-grid-container">
+				<div class="projects-grid-item">
+					<h1>Personal Website</h1>
+					<p><a href="https://github.com/militsasotirova/militsasotirova.github.io" target="_blank">GitHub Repo</a></p>
+				</div>
+
+				<div class="projects-grid-item">
+
+				</div>
+
+	        <div class="projects-grid-item">
+						<h1>Improving Reading Level Evaluations Using Sentence Structure and Word Frequency</h1>
+						<p><a href="https://github.com/militsasotirova/reading-level-analysis">GitHub Repo</a> | <a href="../resources/Reading_Level_Analysis.pdf" target="_blank">Paper</a> | <a href="../resources/Poster.pdf" target="_blank">Poster</a> | <a href="https://youtu.be/vwczaF5nrdU" target="_blank">Demo Video Link</a></p>
+					</div>
+
+					<div class="projects-grid-item">
+						<p><strong>Summary:</strong></p>
+						<p>During my senior year of high school, I conducted a research project of my own design from start to finish.
+						I analyzed the reading levels of different texts using a formula that I created (details and justifications in <a href="../resources/Reading_Level_Analysis.pdf" target="_blank">paper</a>):</p>
+						<img src="../images/formula.png" class="formula-image" title="formula" alt="formula">
+						<p></p>
+						<br>
+						<p>I used the Oxford English Dictionary API for the frequencies of words in modern English and the Web-based L2 Syntactic Complexity Analyzer created by Haiyang Ai
+						to count the number of clauses found in a given body of text. I created a website with Python/CherryPy as the backend (demo in video below) for users to be able to input their
+						own text and see how my analysis compares to traditional ones.</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/vwczaF5nrdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p></p>
+						<br>
+						<p class="abstract"><i>Abstract:</i></p>
+						<p class="abstract"><i>People have been using readability formulas, or reading level formulas, for a wide variety of uses for many years.
+							These formulas usually depend on factors like the number of characters, words, sentences, syllables per word, etc.
+							there are in a sample of text. I created a formula which relies on the number of clauses in a sentence, which
+							indicates the sentence complexity, as well as the vocabulary difficulty, which is based on the frequency of the words
+							in modern English. In addition, I created a scale to go along with my formula so a user can see where their text
+							 falls with respect to other, more well-known texts.</i></p>
+					</div>
+
+
+			</div>
+
+
+
 		</div>
 
 		<footer>
