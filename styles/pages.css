@@ -106,17 +106,37 @@ ul {
 }
 
 .education-image {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 .education-grid-container {
   display: grid;
   grid-template-columns: 1fr 6fr;
   justify-content: center;
-  grid-gap: 90px;
+  grid-gap: 70px;
 }
 
 .education-grid-item {
   line-height: 40px;
+}
+
+.experience-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  grid-gap: 90px;
+}
+
+.experience-grid-item {
+  margin: auto;
+  line-height: 40px;
+}
+
+.experience-grid-item p {
+  line-height: 25px;
+}
+
+.experience-grid-item li {
+  line-height: 25px;
 }
