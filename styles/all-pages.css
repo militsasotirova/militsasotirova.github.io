@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  float: left;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 130%;
+}
+
+#current {
+  font-weight: 300;
+}
+
+footer {
+  margin-top: -10px;
+  text-align: center;
+}
+
+footer img {
+  width: 75px;
+  height: 75px;
+}
+
+.grid-container {
+  width: 55%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 90px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  justify-self: end;
+}
+
+.page-content {
+  font-size: 90%;
+  margin: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin-left: 50px;
+  line-height: 20px;
+  font-size: 120%;
+}
+
+.aboutme-grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+
+.aboutme-grid-item {
+  margin: auto;
+}
+
+.education-image {
+  height: 200px;
+  width: 200px;
+}
+
+.education-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content: center;
+  grid-gap: 50px;
+}
+
+.education-grid-item {
+  line-height: 30px;
+}
+
+.experience-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding-bottom: 50px;
+}
+
+.experience-grid-item {
+  line-height: 40px;
+}
+
+.experience-grid-item p {
+  line-height: 25px;
+}
+
+.experience-grid-item li {
+  line-height: 25px;
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.projects-grid-item {
+  line-height: 40px;
+}
+
+.projects-grid-item p {
+  line-height: 25px;
+}
