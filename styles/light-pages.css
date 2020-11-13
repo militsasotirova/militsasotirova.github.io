@@ -10,6 +10,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-image: linear-gradient(#bfe4be, #effae5);
   height: 125px;
 }
