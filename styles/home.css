@@ -4,19 +4,19 @@ html {
 
 body {
     height: 100%;
-    background-image: linear-gradient(#2C3E50, #46596C);
+    background-image: linear-gradient(#bfe4be, #effae5);
     background-repeat: no-repeat;
     background-attachment: fixed;
     resize: vertical;
     font-family: 'Space Mono', monospace;
-    color: #ECF0F1;
+    color: #18314F;
 }
 
 .centerpiece img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  border: 2px solid #C9E4CA;
+  border: 2px solid #f0fcc2;
 }
 
 .centerpiece p {
@@ -33,11 +33,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #ECF0F1;
+  color: #18314F;
 }
 
 a:hover {
-  color: #ACB2B5;
+  color: #69818e;
 }
 
 footer {
