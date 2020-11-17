@@ -4,9 +4,9 @@
 <head>
 	<title>Militsa Sotirova</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono:400,700&display=swap" rel="stylesheet">
-	<link href="../styles/all-pages.css" rel="stylesheet">
-	<link href="../styles/light-pages.css" rel="stylesheet" id="theme-link">
-	<link href="../styles/toggle.css" rel="stylesheet">
+	<link href="./styles/all-pages.css" rel="stylesheet">
+	<link href="./styles/light-pages.css" rel="stylesheet" id="theme-link">
+	<link href="./styles/toggle.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 			</div>
 		</label>
 
-		<a href="../index.html"><img src="../images/face.jpg" alt="headshot"></a>
-		<a href="../index.html">
+		<a href="./index.html"><img src="./images/face.jpg" alt="headshot"></a>
+		<a href="./index.html">
 			<h1>Militsa Sotirova</h1>
 		</a>
 
@@ -48,7 +48,7 @@
 	<div class="page-content">
 		<div class="aboutme-grid-container">
 			<div class="aboutme-grid-item">
-				<p><a href="../resources/resume.pdf" target="_blank">Resume</a> | <a href="https://github.com/militsasotirova"
+				<p><a href="./resources/resume.pdf" target="_blank">Resume</a> | <a href="https://github.com/militsasotirova"
 						target="_blank">GitHub</a> | <a href="mailto: militsasotirova@gmail.com" target="_blank">Email</a> | <a
 						href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank">LinkedIn</a></p>
 				<br>
@@ -87,12 +87,12 @@
 
 	<footer>
 		<h3>Contact Me:</h3>
-		<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="../images/black-mail.png" title="email"
+		<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="./images/black-mail.png" title="email"
 				alt="email"></a>
-		<a href="https://github.com/militsasotirova" target="_blank"><img src="../images/black-github.png" title="github"
+		<a href="https://github.com/militsasotirova" target="_blank"><img src="./images/black-github.png" title="github"
 				alt="github"></a>
 		<a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img
-				src="../images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
+				src="./images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
 	</footer>
 
 	<script>
@@ -101,11 +101,11 @@
 
 		function toggleLightDark(e) {
 			if (e.target.checked) {
-				theme.href = "../styles/dark-pages.css";
+				theme.href = "./styles/dark-pages.css";
 				document.cookie = 'theme=dark';
 			}
 			else {
-				theme.href = "../styles/light-pages.css";
+				theme.href = "./styles/light-pages.css";
 				document.cookie = 'theme=light';
 			}
 		}
@@ -118,11 +118,11 @@
 
 		function setTheme() {
 			if (isDark()) {
-				theme.href = "../styles/dark-pages.css";
+				theme.href = "./styles/dark-pages.css";
 				var t = document.getElementById("togBtn");
 				t.checked = true;
 			} else {
-				theme.href = "../styles/light-pages.css";
+				theme.href = "./styles/light-pages.css";
 				var t = document.getElementById("togBtn");
 				t.checked = false;
 			}
