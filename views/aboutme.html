@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	
+
 	<header>
 		<label class="switch">
 			<input type="checkbox" id="togBtn">
@@ -97,42 +97,42 @@
 
 	<script>
 		const toggleSwitch = document.getElementsByClassName("switch")[0];
-    const theme = document.querySelector("#theme-link");
+		const theme = document.querySelector("#theme-link");
 
-    function toggleLightDark(e) {
-        if (e.target.checked) {
-            theme.href = "../styles/dark-pages.css";
-            document.cookie = 'theme=dark';
-        }
-        else {
-            theme.href = "../styles/light-pages.css";
-            document.cookie = 'theme=light';
-        }  
-    }
-    toggleSwitch.addEventListener('change', toggleLightDark, false);
+		function toggleLightDark(e) {
+			if (e.target.checked) {
+				theme.href = "../styles/dark-pages.css";
+				document.cookie = 'theme=dark';
+			}
+			else {
+				theme.href = "../styles/light-pages.css";
+				document.cookie = 'theme=light';
+			}
+		}
+		toggleSwitch.addEventListener('change', toggleLightDark, false);
 
-    function isDark() {
-			console.log(document.cookie);
-        return document.cookie.match(/theme=dark/i) != null;
-    }
+		function isDark() {
+			console.log('cookie: ' + document.cookie);
+			return document.cookie.match(/theme=dark/i) != null;
+		}
 
-    function setTheme() {
-        if (isDark()) {
-						theme.href = "../styles/dark-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = true;
-						document.cookie = 'theme=dark';
-        } else {
-						theme.href = "../styles/light-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = false;
-						document.cookie = 'theme=light';
-        }
-    }
+		function setTheme() {
+			if (isDark()) {
+				theme.href = "../styles/dark-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = true;
+				document.cookie = 'theme=dark';
+			} else {
+				theme.href = "../styles/light-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = false;
+				document.cookie = 'theme=light';
+			}
+		}
 
-    (function() {
-        setTheme();
-    })();
+		(function () {
+			setTheme();
+		})();
 	</script>
 </body>
 

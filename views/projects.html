@@ -50,10 +50,10 @@
 				<a class="project-card" href="https://github.com/militsasotirova/reading-level-analysis" target="_blank">
 					<div class="card">
 						<p><strong>Reading Level Analysis</strong></p>
-						<p>I created a reading level formula to analyze texts. I also built a 
-							website using Python/CherryPy for users to input their own text and see 
+						<p>I created a reading level formula to analyze texts. I also built a
+							website using Python/CherryPy for users to input their own text and see
 							how my analysis compares to traditional ones.</p>
-						</div>
+					</div>
 				</a>
 			</div>
 
@@ -61,10 +61,10 @@
 				<a class="project-card" href="https://github.com/CodingPerudo/rudo" target="_blank">
 					<div class="card">
 						<p><strong>Liar's Dice</strong></p>
-						<p>I designed and implemented an online version of a multiplayer 
-							Liar's Dice (Perudo) game using Python and JavaScript with the 
+						<p>I designed and implemented an online version of a multiplayer
+							Liar's Dice (Perudo) game using Python and JavaScript with the
 							functionality of hosting mutiple game sessions.</p>
-						</div>
+					</div>
 				</a>
 			</div>
 
@@ -72,8 +72,8 @@
 				<a class="project-card" href="https://github.com/militsasotirova/levenshtein" target="_blank">
 					<div class="card">
 						<p><strong>Levenshtein Edit Distance</strong></p>
-						<p>I implemented a Go package to calculate the Levenshtein Edit 
-							distance between two strings (number of single character edits to 
+						<p>I implemented a Go package to calculate the Levenshtein Edit
+							distance between two strings (number of single character edits to
 							transform one into the other) given by the user.
 					</div>
 				</a>
@@ -85,7 +85,7 @@
 						<div class="container">
 							<p><strong>Currency Converter</strong></p>
 							<p>I built a server using Go that hosts a website that converts currencies using the CurrencyLayer API.
-							</div>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -105,42 +105,42 @@
 
 	<script>
 		const toggleSwitch = document.getElementsByClassName("switch")[0];
-    const theme = document.querySelector("#theme-link");
+		const theme = document.querySelector("#theme-link");
 
-    function toggleLightDark(e) {
-        if (e.target.checked) {
-            theme.href = "../styles/dark-pages.css";
-            document.cookie = 'theme=dark';
-        }
-        else {
-            theme.href = "../styles/light-pages.css";
-            document.cookie = 'theme=light';
-        }  
-    }
-    toggleSwitch.addEventListener('change', toggleLightDark, false);
+		function toggleLightDark(e) {
+			if (e.target.checked) {
+				theme.href = "../styles/dark-pages.css";
+				document.cookie = 'theme=dark';
+			}
+			else {
+				theme.href = "../styles/light-pages.css";
+				document.cookie = 'theme=light';
+			}
+		}
+		toggleSwitch.addEventListener('change', toggleLightDark, false);
 
-    function isDark() {
-			console.log(document.cookie);
-        return document.cookie.match(/theme=dark/i) != null;
-    }
+		function isDark() {
+			console.log('cookie: ' + document.cookie);
+			return document.cookie.match(/theme=dark/i) != null;
+		}
 
-    function setTheme() {
-        if (isDark()) {
-						theme.href = "../styles/dark-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = true;
-						document.cookie = 'theme=dark';
-        } else {
-						theme.href = "../styles/light-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = false;
-						document.cookie = 'theme=light';
-        }
-    }
+		function setTheme() {
+			if (isDark()) {
+				theme.href = "../styles/dark-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = true;
+				document.cookie = 'theme=dark';
+			} else {
+				theme.href = "../styles/light-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = false;
+				document.cookie = 'theme=light';
+			}
+		}
 
-    (function() {
-        setTheme();
-    })();
+		(function () {
+			setTheme();
+		})();
 	</script>
 </body>
 

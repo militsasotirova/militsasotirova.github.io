@@ -126,88 +126,88 @@
 		</div>
 	</div>
 
-		<footer>
-			<h3>Contact Me:</h3>
-			<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="../images/black-mail.png" title="email"
-					alt="email"></a>
-			<a href="https://github.com/militsasotirova" target="_blank"><img src="../images/black-github.png" title="github"
-					alt="github"></a>
-			<a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img
-					src="../images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
-		</footer>
+	<footer>
+		<h3>Contact Me:</h3>
+		<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="../images/black-mail.png" title="email"
+				alt="email"></a>
+		<a href="https://github.com/militsasotirova" target="_blank"><img src="../images/black-github.png" title="github"
+				alt="github"></a>
+		<a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img
+				src="../images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
+	</footer>
 
-		<script>
-			// rufas modal
-			var rufasModal = document.getElementById("rufasModal");
-			var rufasCard = document.getElementById("rufas");
-			var spanRufas = document.getElementById("rufasSpan");
-			rufasCard.onclick = function () {
-				rufasModal.style.display = "block";
-			}
-			spanRufas.onclick = function () {
+	<script>
+		// rufas modal
+		var rufasModal = document.getElementById("rufasModal");
+		var rufasCard = document.getElementById("rufas");
+		var spanRufas = document.getElementById("rufasSpan");
+		rufasCard.onclick = function () {
+			rufasModal.style.display = "block";
+		}
+		spanRufas.onclick = function () {
+			rufasModal.style.display = "none";
+		}
+
+
+		// mongo intern modal
+		var mongoModal = document.getElementById("mongoModal");
+		var mongoCard = document.getElementById("mongo");
+		var spanMongo = document.getElementById("mongoSpan");
+		mongoCard.onclick = function () {
+			mongoModal.style.display = "block";
+		}
+		spanMongo.onclick = function () {
+			mongoModal.style.display = "none";
+		}
+
+
+		window.onclick = function (event) {
+			if (event.target == rufasModal) {
 				rufasModal.style.display = "none";
 			}
-
-
-			// mongo intern modal
-			var mongoModal = document.getElementById("mongoModal");
-			var mongoCard = document.getElementById("mongo");
-			var spanMongo = document.getElementById("mongoSpan");
-			mongoCard.onclick = function() {
-				mongoModal.style.display = "block";
-			}
-			spanMongo.onclick = function() {
+			if (event.target == mongoModal) {
 				mongoModal.style.display = "none";
 			}
-
-
-			window.onclick = function (event) {
-				if (event.target == rufasModal) {
-					rufasModal.style.display = "none";
-				}
-				if (event.target == mongoModal) {
-					mongoModal.style.display = "none";
-				}
-			}
+		}
 
 		const toggleSwitch = document.getElementsByClassName("switch")[0];
-    const theme = document.querySelector("#theme-link");
+		const theme = document.querySelector("#theme-link");
 
-    function toggleLightDark(e) {
-        if (e.target.checked) {
-            theme.href = "../styles/dark-pages.css";
-            document.cookie = 'theme=dark';
-        }
-        else {
-            theme.href = "../styles/light-pages.css";
-            document.cookie = 'theme=light';
-        }  
-    }
-    toggleSwitch.addEventListener('change', toggleLightDark, false);
+		function toggleLightDark(e) {
+			if (e.target.checked) {
+				theme.href = "../styles/dark-pages.css";
+				document.cookie = 'theme=dark';
+			}
+			else {
+				theme.href = "../styles/light-pages.css";
+				document.cookie = 'theme=light';
+			}
+		}
+		toggleSwitch.addEventListener('change', toggleLightDark, false);
 
-    function isDark() {
-			console.log(document.cookie);
-        return document.cookie.match(/theme=dark/i) != null;
-    }
+		function isDark() {
+			console.log('cookie: ' + document.cookie);
+			return document.cookie.match(/theme=dark/i) != null;
+		}
 
-    function setTheme() {
-        if (isDark()) {
-						theme.href = "../styles/dark-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = true;
-						document.cookie = 'theme=dark';
-        } else {
-						theme.href = "../styles/light-pages.css";
-						var t = document.getElementById("togBtn");
-						t.checked = false;
-						document.cookie = 'theme=light';
-        }
-    }
+		function setTheme() {
+			if (isDark()) {
+				theme.href = "../styles/dark-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = true;
+				document.cookie = 'theme=dark';
+			} else {
+				theme.href = "../styles/light-pages.css";
+				var t = document.getElementById("togBtn");
+				t.checked = false;
+				document.cookie = 'theme=light';
+			}
+		}
 
-    (function() {
-        setTheme();
-    })();
-		</script>
+		(function () {
+			setTheme();
+		})();
+	</script>
 </body>
 
 </html>
