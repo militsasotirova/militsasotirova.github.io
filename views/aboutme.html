@@ -118,9 +118,13 @@
 
     function setTheme() {
         if (isDark()) {
-            theme.href = "../styles/dark-pages.css";
+						theme.href = "../styles/dark-pages.css";
+						var t = document.getElementById("togBtn");
+            t.checked = true;
         } else {
-            theme.href = "../styles/light-pages.css";
+						theme.href = "../styles/light-pages.css";
+						var t = document.getElementById("togBtn");
+            t.checked = false;
         }
     }
 
