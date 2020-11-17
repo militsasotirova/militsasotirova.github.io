@@ -120,11 +120,11 @@
 
     function toggleLightDark(e) {
         if (e.target.checked) {
-            theme.href = "./styles/dark-pages.css";
+            theme.href = "../styles/dark-pages.css";
             document.cookie = 'theme=dark';
         }
         else {
-            theme.href = "./styles/light-pages.css";
+            theme.href = "../styles/light-pages.css";
             document.cookie = 'theme=light';
         }  
         console.log('Cookies are now: ' + document.cookie);
@@ -137,9 +137,9 @@
 
     function setTheme() {
         if (isDark()) {
-            theme.href = "./styles/dark-pages.css";
+            theme.href = "../styles/dark-pages.css";
         } else {
-            theme.href = "./styles/light-pages.css";
+            theme.href = "../styles/light-pages.css";
         }
     }
 
