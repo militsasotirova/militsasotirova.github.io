@@ -69,13 +69,14 @@
     toggleSwitch.addEventListener('change', toggleLightDark, false);
 
     function isDark() {
-
         return document.cookie.match(/theme=dark/i) != null;
     }
 
     function setTheme() {
         if (isDark()) {
             theme.href = "./styles/dark-home.css";
+            var t = document.getElementById("togBtn");
+            t.checked = true;
         } else {
             theme.href = "./styles/light-home.css";
         }
