@@ -112,6 +112,7 @@
     toggleSwitch.addEventListener('change', toggleLightDark, false);
 
     function isDark() {
+			console.log(document.cookie);
         return document.cookie.match(/theme=dark/i) != null;
     }
 
