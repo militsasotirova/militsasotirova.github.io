@@ -18,17 +18,12 @@ p {
 }
 
 #current {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer {
   margin-top: -10px;
   text-align: center;
-}
-
-footer img {
-  width: 75px;
-  height: 75px;
 }
 
 .grid-container {
@@ -65,11 +60,6 @@ ul {
 
 .aboutme-grid-item {
   margin: auto;
-}
-
-.education-image {
-  height: 200px;
-  width: 200px;
 }
 
 .education-grid-container {

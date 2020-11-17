@@ -8,7 +8,7 @@
     <link href="./styles/toggle.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <label class="switch">
         <input type="checkbox" id="togBtn">
         <div class="slider round">
@@ -55,16 +55,34 @@
     const toggleSwitch = document.getElementsByClassName("switch")[0];
     const theme = document.querySelector("#theme-link");
 
-    function switchTheme(e) {
+    function toggleLightDark(e) {
         if (e.target.checked) {
             theme.href = "./styles/dark-home.css";
+            document.cookie = 'theme=dark';
         }
         else {
             theme.href = "./styles/light-home.css";
-        }    
+            document.cookie = 'theme=light';
+        }  
+        console.log('Cookies are now: ' + document.cookie);
+    }
+    toggleSwitch.addEventListener('change', toggleLightDark, false);
+
+    function isDark() {
+        return document.cookie.match(/theme=dark/i) != null;
     }
 
-    toggleSwitch.addEventListener('change', switchTheme, false);
+    function setTheme() {
+        if (isDark()) {
+            theme.href = "./styles/dark-home.css";
+        } else {
+            theme.href = "./styles/light-home.css";
+        }
+    }
+
+    (function() {
+        setTheme();
+    })();
     </script>
 </body>
 

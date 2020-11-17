@@ -1,0 +1,113 @@
+body {
+	height: 100%;
+	align-items: center;
+  justify-content: center;
+  resize: vertical;
+  font-family: 'Space Mono', monospace;
+  color: #dcecff;
+  background-color: #151c17;
+  line-height: 150%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(#051205, #212e10);
+  height: 125px;
+  z-index: 1;
+}
+
+header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #4c573f;
+  float: left;
+  margin: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #b9d1ee;
+}
+
+footer img {
+  width: 75px;
+  height: 75px;
+  filter:invert(180%);
+}
+
+a {
+  text-decoration: none;
+  color: #ff39b6;
+}
+
+a:hover {
+  color: #69818e;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #051205;
+  margin: 7% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(238, 222, 222, 0.618);
+  transition: 0.3s;
+  border-radius: 5px; 
+  padding: 2px 16px;
+  margin: 10px 10px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 16px 0 #91917b; 
+  cursor: pointer;
+}
+
+/* since project cards are actually links, need to specify text to not look
+like a link */
+.project-card {
+  text-decoration: none;
+  color: #dcecff;
+}
+.project-card:hover {
+  color: #dcecff;
+}
+
+.education-image {
+  height: 200px;
+  width: 200px;
+  filter: invert(100%);
+  z-index: -1;
+}
