@@ -119,11 +119,13 @@
         if (isDark()) {
 						theme.href = "../styles/dark-pages.css";
 						var t = document.getElementById("togBtn");
-            t.checked = true;
+						t.checked = true;
+						document.cookie = 'theme=dark';
         } else {
 						theme.href = "../styles/light-pages.css";
 						var t = document.getElementById("togBtn");
-            t.checked = false;
+						t.checked = false;
+						document.cookie = 'theme=light';
         }
     }
 
