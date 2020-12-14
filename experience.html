@@ -7,6 +7,7 @@
 	<link href="./styles/all-pages.css" rel="stylesheet">
 	<link href="./styles/light-pages.css" rel="stylesheet" id="theme-link">
 	<link href="./styles/toggle.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/m.png" />
 </head>
 
 <body>
@@ -49,7 +50,7 @@
 
 			<div class="experience-grid-item">
 				<div class="card" id="mongo">
-					<h1><strong>MongoDB Intern</strong></h1>
+					<h2><strong>Incoming MongoDB Summer Intern</strong></h2>
 					<p>June 2021 - August 2021</p>
 					<p>New York City</p>
 				</div>
@@ -57,47 +58,51 @@
 				<div id="mongoModal" class="modal">
 					<div class="modal-content">
 						<span class="close" id="mongoSpan">&times;</span>
-						<p>placeholder</p>
+						<p>Incoming MongoDB Summer Intern</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="experience-grid-item">
-				<div class="card" id="rufas">
-					<h1><strong>Ru</strong>minant <strong>Fa</strong>rm <strong>S</strong>ystems Developer</h1>
-					<p>November 2018 - PRESENT</p>
-					<p>Cornell University</p>
+				<a id="rufas-card"></a>
+				<div class="card" id="rufas" name="rufas-card">
+					
+						<h2><strong>Ruminant Farm Systems Developer</strong></h2>
+						<p>November 2018 - PRESENT</p>
+						<p>Cornell University</p>
 
-					<p>I am designing, developing, maintaining, and testing a Python application for nutrient flow
-						through a farm system. I collaborate with student team members and professors from universities
-						nationwide. I have multiple roles in this project, one being the technical lead of the data
-						management team: earlier this year, I introduced the usage of databases in the project to store
-						input and output data. I am also involved in
-						programming model developments, mentoring new team members, and performing code reviews.
-					</p>
+						<p>I am designing, developing, maintaining, and testing a Python application for nutrient flow
+							through a farm system. I collaborate with student team members and professors from universities
+							nationwide. I have multiple roles in this project, one being the technical lead of the data
+							management team: earlier this year, I introduced the usage of databases in the project to store
+							input and output data. I am also involved in
+							programming model developments, mentoring new team members, and performing code reviews.
+						</p>
+					
 				</div>
+			</a>
 
 				<div id="rufasModal" class="modal">
 					<div class="modal-content">
 						<span class="close" id="rufasSpan">&times;</span>
 						<p>RuFaS is a simulation written in Python that models nutrient flow through a farm system based
 							on user inputs as well as published research. There are four main modules: animal, soil, manure,
-							and crop, and I primarily work in the animal module. Throughout my time on this project,
-							I have learned a lot. This is an interdisciplinary project, as it is a computer simulation of an
-							animal/farm system. However, even though I have no background in animal or farm science, I have been
-							able to contribute a significant amount to the code base for the simulation:</p>
+							and crop, and I primarily work in the animal module. This is an interdisciplinary project that performs
+							a computer simulation of an
+							animal/farm system. Even though I have no background in animal or farm science, I have contributed a
+							significant amount to the code base for the simulation:</p>
 						<ul>
 							<li>I am currently the project leader of the data management team. We are using SQLite
-								to store input data as well as persist results for future review (comparison of two runs, version
-								to version comparisons, etc.) I lead meetings on topic and assign weekly tasks to the members of the
+								to store input data and persist results for future review (comparison of two runs, version
+								to version comparisons, etc.). I lead meetings on topic and assign weekly tasks to the members of the
 								team.</li>
-							<li>I restructured the entire animal module so that it takes more user input on the pens in the farm, the
-								life cycle of the animals, and the general animal management strategy the user would like to simulate.
-								Another outcome of this restructuring was that it more modular in nature, making understanding the
-								code easier.</li>
-							<li>I coded the ration formulation as well as manure excretion component calculations for lactating cows.
+							<li>I restructured the animal module to accept more user input describing the pens in the farm, the
+								life cycle of the animals, the general animal management strategy the user would like to simulate,
+								and to perform the simulation based on the additional input. The restructuring also made the code
+								more modular in nature, making the code easier to understand.</li>
+							<li>I coded the ration formulation and manure excretion component calculations for lactating cows.
 							</li>
-							<li>I coded the output files for the animal module, as well as added a feature for a different style of
+							<li>I coded the output files for the animal module and added a feature for a different style of
 								input
 								to the simulation that is more intuitive for the general user.</li>
 							<li>The project has an emphasis on documentation, as we want future developers to be able to easily
@@ -105,20 +110,13 @@
 								and users to be able to understand exactly what the simulation is doing.</li>
 						</ul>
 						<br>
-						<p>I presented my work in August, 2019 and August, 2020 at the RuFaS annual meeting to an audience of
+						<p>I presented my work in August 2019 and August 2020 at the RuFaS annual meeting to an audience of
 							programmers,
-							the general leaders of the project, and people from the industry who will use the final product in their
-							company policy decisions.</p>
-						<br>
-						<p>Throughout my time working on this project I have learned a lot about communication. People from
-							universities
-							all over the country work on different aspects of RuFaS and communicating our progress and issues is very
-							important.
-							I attend two biweekly meetings, one being a programmers meeting where we give general updates as well as
-							bring up
-							any issues that are relevant to the whole simulation, and the other being for the overall animal module
-							where
-							we discuss developments in algorithms for calculations.</p>
+							the general leaders of the project, and people from the agricultural industry who will use the final
+							product in their
+							company policy decisions. People from universities all over the country work on different aspects of
+							RuFaS, and communicating our progress and issues is very
+							important to the success of the project.</p>
 					</div>
 				</div>
 
@@ -128,12 +126,12 @@
 
 	<footer>
 		<h3>Contact Me:</h3>
-		<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="./images/black-mail.png" title="email"
+		<a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="./images/mail.png" title="email"
 				alt="email"></a>
-		<a href="https://github.com/militsasotirova" target="_blank"><img src="./images/black-github.png" title="github"
+		<a href="https://github.com/militsasotirova" target="_blank"><img src="./images/github.png" title="github"
 				alt="github"></a>
-		<a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img
-				src="./images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
+		<a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img src="./images/linkedin.png"
+				title="linkedin" alt="linkedin"></a>
 	</footer>
 
 	<script>
@@ -204,6 +202,14 @@
 		(function () {
 			setTheme();
 		})();
+
+		document.addEventListener('keydown', function(e) {
+			let keyCode = e.keyCode;
+			if (keyCode === 27) {
+				mongoModal.style.display = "none";
+				rufasModal.style.display = "none";
+			}
+		});
 	</script>
 </body>
 

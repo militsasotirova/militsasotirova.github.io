@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i&display=swap" rel="stylesheet">
     <link href="./styles/light-home.css" rel="stylesheet" id="theme-link">
     <link href="./styles/toggle.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/m.png" />
 </head>
 
 <body id="body">
@@ -20,7 +21,7 @@
     <div class="centerpiece">
         <img src="./images/face.jpg" alt="headshot">
         <h1>Militsa Sotirova</h1>
-        <p>Computer Science student at Cornell University</p>
+        <p>Computer Science student @ Cornell University</p>
     </div>
 
     <div class="grid-container">
@@ -43,12 +44,12 @@
 
     <footer>
         <h3>Contact Me:</h3>
-        <a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="./images/black-mail.png" title="email"
+        <a href="mailto: militsasotirova@gmail.com" target="_blank"><img src="./images/mail.png" title="email"
                 alt="email"></a>
-        <a href="https://github.com/militsasotirova" target="_blank"><img src="./images/black-github.png" title="github"
+        <a href="https://github.com/militsasotirova" target="_blank"><img src="./images/github.png" title="github"
                 alt="github"></a>
         <a href="https://www.linkedin.com/in/militsa-sotirova-5362a7177" target="_blank"><img
-                src="./images/black-linkedin.png" title="linkedin" alt="linkedin"></a>
+                src="./images/linkedin.png" title="linkedin" alt="linkedin"></a>
     </footer>
 
     <script>
@@ -73,11 +74,11 @@
 
         function setTheme() {
             if (isDark()) {
-                theme.href = "../styles/dark-home.css";
+                theme.href = "./styles/dark-home.css";
                 var t = document.getElementById("togBtn");
                 t.checked = true;
             } else {
-                theme.href = "../styles/light-home.css";
+                theme.href = "./styles/light-home.css";
                 var t = document.getElementById("togBtn");
                 t.checked = false;
             }

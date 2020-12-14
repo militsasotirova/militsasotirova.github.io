@@ -1,7 +1,7 @@
 .switch {
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 45px;
   display: inline-block;
   width: 100px;
   height: 34px;
@@ -29,7 +29,7 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #a833b9;
+  background-color: #9965CD;
   -webkit-transition: .4s;
   transition: .4s;
 }

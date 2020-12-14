@@ -4,7 +4,8 @@ html {
 
 body {
     height: 100%;
-    background-image: linear-gradient(#bfe4be, #effae5);
+    width: 100%;
+    background-image: linear-gradient(#BCD8B7, #effae5);
     background-repeat: no-repeat;
     background-attachment: fixed;
     resize: vertical;
@@ -50,8 +51,17 @@ footer h3 {
 }
 
 footer img {
-  width: 75px;
-  height: 75px;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+footer img:hover {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 1px 16px 0 #91917b; 
+  border-radius: 5px;
 }
 
 .centerpiece {
