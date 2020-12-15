@@ -13,6 +13,10 @@ header h1 {
   font-weight: 300;
 }
 
+h3 {
+  font-weight: normal;
+}
+
 p {
   font-size: 130%;
 }
