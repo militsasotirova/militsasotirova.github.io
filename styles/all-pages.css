@@ -114,3 +114,9 @@ ul {
   width: 400px;
   height: 400px;
 }
+
+.mongo-img {
+  height: 50px;
+  width: 50px; 
+  padding: 5px;
+}
