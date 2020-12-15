@@ -109,3 +109,8 @@ ul {
 .projects-grid-item p {
   line-height: 25px;
 }
+
+.mongo-gif {
+  width: 400px;
+  height: 400px;
+}

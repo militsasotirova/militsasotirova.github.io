@@ -121,3 +121,9 @@ like a link */
   height: 200px;
   width: 200px;
 }
+
+.project-img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
