@@ -49,21 +49,46 @@
 		<div class="experience-grid-container">
 
 			<div class="experience-grid-item">
-				<div class="card" id="mongo">
-					<h2><strong>Incoming MongoDB Summer Intern</strong></h2>
+				<a id="mongo-card"></a>
+				<div class="card" id="mongo" name="mongo-card">
+					<h2><strong>MongoDB Software Engineering Intern</strong></h2>
 					
-					<p>June 2021 - August 2021</p>
-					<div style="display: flex;">
-					<p style="float: left;">New York City</p>
-
-					<p style="float: right; padding-left: 350px; "><img class="mongo-img" src="./images/mongo-logo.png" alt="dice"></p>
-				</div>
+					<h3><i>June 2021 - August 2021 (New York City)</i></h3>
+				
+					<div>
+						<p style="float: right;"><img class="mongo-img" src="./images/mongo-logo.png" alt="dice"></p>
 					</div>
 
+					<p>I worked on the Query Optimization team where I implemented some optimizations for 
+						aggregation queries, introduced a feature flag to allow the execution of a particular 
+						stages in a distributed environment, and designed performance benchmarks for an aggregation stage.</p>
+				</div>
+					
+
 				<div id="mongoModal" class="modal">
-					<div class="modal-content" style="text-align: center;">
+					<div class="modal-content">
 						<span class="close" id="mongoSpan">&times;</span>
-						<p><img class="mongo-gif" src="./images/intern_mongo.gif" alt="mongodb"></p>
+						<p>
+							As I mentioned, I was on the Query Optimization team. The work I did as part of this team includes:
+						</p>
+						<ul>
+							<li>I implemented the internal swapping of two aggregation stages for better performance.</li>
+							<li>I implemented the pushdown of a $match stage before an unpack bucket stage to filter and reduce
+								the number of documents needed to be examined in a time-series collection.
+							</li>
+							<li>I introduced a feature flag to allow for the execution of the $lookup and $graphLookup aggregation
+								stages to occur in a distributed environment. As part of this work, I wrote new integration tests
+								and updated existing ones to reflect the new specification. Furthermore, I modified the $graphLookup
+								stage constraints in order to only permit its execution on the proper types of nodes.
+							</li>
+							<li>I designed and measured performance benchmarks for the MQL $graphLookup aggregation stage. I explored
+								the consequences of using different collection sizes, limiting the recursion depth of the query, and using
+								various document shapes as they affected the expected size of the result set. I also validated the results
+								from executions of these benchmarks in distributed vs non-distributed environments and targeted vs non-targeted 
+								queries.
+							</li>
+							<li>I presented all of this work at an end-of-summer presentation to my collegues.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -73,23 +98,25 @@
 				<div class="card" id="rufas" name="rufas-card">
 					
 						<h2><strong>Ruminant Farm Systems Developer</strong></h2>
-						<p>November 2018 - PRESENT</p>
-						<p>Cornell University</p>
+						<h3><i>November 2018 - PRESENT (Cornell University, Ithaca NY</i>)</h3>
 
 						<div>
 							<p style="float: right;"><img class="project-img" src="./images/cow.png" alt="dice"></p>
 						</div>
 
-						<p>I am designing, developing, maintaining, and testing a Python application for nutrient flow
-							through a farm system. I collaborate with student team members and professors from universities
-							nationwide. I have multiple roles in this project, one being the technical lead of the data
-							management team: earlier this year, I introduced the usage of databases in the project to store
-							input and output data. I am also involved in
-							programming model developments, mentoring new team members, and performing code reviews.
+						<p>I am designing, developing, maintaining, and testing a Python application for nutrient flow 
+							through a farm system. I collaborate with student team members and professors from universities 
+							nationwide. I have multiple roles in this project, one being a technical lead: earlier this 
+							year, I introduced the usage of databases in the project to store input and output data and 
+							I have continued to work on this project. I am also involved in programming model developments, 
+							mentoring new team members, and performing code reviews. Furthermore, I co-authored 
+							<a href="https://www.mdpi.com/2076-2615/11/5/1373">this paper</a> which discusses the model's features and structure.
 						</p>
 					
 				</div>
-			</a>
+			 
+
+			 
 
 				<div id="rufasModal" class="modal">
 					<div class="modal-content">
@@ -101,9 +128,13 @@
 							animal/farm system. Even though I have no background in animal or farm science, I have contributed a
 							significant amount to the code base for the simulation:</p>
 						<ul>
-							<li>I am currently the project leader of the data management team. We are using SQLite
+							<li>I am currently the techical lead of the output and data analysis team, where we are 
+								working to implement different options for data export and analysis for a more complete
+								set of model outputs.
+							</li>
+							<li>When the data management team was active, I was its technical lead. We are using SQLite
 								to store input data and persist results for future review (comparison of two runs, version
-								to version comparisons, etc.). I lead meetings on topic and assign weekly tasks to the members of the
+								to version comparisons, etc.). I led meetings on topic and assign weekly tasks to the members of the
 								team.</li>
 							<li>I restructured the animal module to accept more user input describing the pens in the farm, the
 								life cycle of the animals, the general animal management strategy the user would like to simulate,
